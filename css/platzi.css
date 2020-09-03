@@ -1,0 +1,62 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.barra{
+    background-color: #0e1249;
+}
+.carrusel img{
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    filter: grayscale(.7);
+}
+
+/* GLOBLALES */
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+@media (min-width: 992px){
+    .contenedor{
+        width: 50%;
+    }
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7)
+}
+
+.footer{
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
+}
+.footer a{
+    color: white;
+}
+
+/* MAIN */
+main .tarjetas{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.tarjetas .card{
+    flex: 1 0 250px;
+    margin: .5rem
+}
+
+/* FORM  */
+.formulario textarea{
+    min-height: 150px;
+    max-height: 200px;
+}
